@@ -1,11 +1,11 @@
 package ru.vadim.lesson1;
 
-public class Cat implements Actions {
+public class Human implements Actions {
     private String name;
     private int runDistance;
     private int jumpHeight;
 
-    public Cat(String name, int distance, int jumpHeight) {
+    public Human(String name, int distance, int jumpHeight) {
         this.name = name;
         this.runDistance = distance;
         this.jumpHeight = jumpHeight;
@@ -13,12 +13,12 @@ public class Cat implements Actions {
 
     @Override
     public void run() {
-        System.out.println("Cat " + this.name + " is running " + this.getRunDistance());
+        System.out.println("Human " + this.name + " is running " + this.getRunDistance());
     }
 
     @Override
     public void jump() {
-        System.out.println("Cat " + this.name + " is jumping " + this.getJumpHeight());
+        System.out.println("Human " + this.name + " is jumping " + this.getJumpHeight());
     }
 
     @Override
@@ -30,4 +30,5 @@ public class Cat implements Actions {
     public int getJumpHeight() {
         return this.jumpHeight;
     }
+
 }
